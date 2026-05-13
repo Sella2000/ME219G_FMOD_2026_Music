@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{ab29cb8f-5fe4-4cce-a6af-a38cb5034586}">
 		<property name="name">
-			<value>New Event</value>
+			<value>MusicBossTemp</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -50,7 +50,7 @@
 			<destination>{595ac679-5b2b-4d09-9865-c5922ddc20f5}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{4587bfbd-4f28-4ea8-b9c7-a1e0688b803e}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{191c66a9-2a47-4ca5-9304-dcca5ae5e675}" />
@@ -115,7 +115,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>73</value>
+			<value>70</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{da3fc210-55b0-47f7-9cde-40b620f86ae9}</destination>

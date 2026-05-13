@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{eee47f5c-18bf-41ec-8ed8-a0aea7743439}">
+		<property name="name">
+			<value>CaveReverb</value>
+		</property>
+		<relationship name="folder">
+			<destination>{1245282f-64d2-49a5-a193-db803b82b2df}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{bfefef6f-1799-45c5-938e-36e121c13458}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{bfefef6f-1799-45c5-938e-36e121c13458}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
