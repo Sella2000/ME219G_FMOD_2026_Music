@@ -31,6 +31,9 @@
 		<relationship name="timeline">
 			<destination>{32e10544-0566-42ec-87bc-4904261c5690}</destination>
 		</relationship>
+		<relationship name="parameters">
+			<destination>{4938fc2d-dfd3-4566-933d-4c5c276a6435}</destination>
+		</relationship>
 		<relationship name="banks">
 			<destination>{0e41109f-2d01-4da2-8a51-0de32d7fc467}</destination>
 		</relationship>
@@ -61,6 +64,7 @@
 	<object class="GroupTrack" id="{f2a52fc5-34e2-4be5-a3e6-4aa4983c8557}">
 		<relationship name="modules">
 			<destination>{65a64552-69bc-422e-a896-fb1c841a2b72}</destination>
+			<destination>{b48ab06a-d1cd-4dcd-96ce-5ee597e81f97}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{99d44b36-127d-45f1-961c-8d5b029f58ab}</destination>
@@ -72,6 +76,14 @@
 		</relationship>
 		<relationship name="markers">
 			<destination>{e2c1cffe-cf53-4881-bad2-d339910075a6}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProxy" id="{4938fc2d-dfd3-4566-933d-4c5c276a6435}">
+		<relationship name="modules">
+			<destination>{b48ab06a-d1cd-4dcd-96ce-5ee597e81f97}</destination>
+		</relationship>
+		<relationship name="preset">
+			<destination>{ba34f45c-12ff-4409-8c1f-ad9119cbf33b}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{055a018a-e929-435d-a932-04d815165af3}">
@@ -97,6 +109,23 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{eebf0a54-ce6e-4c3e-bb2e-c9d6a92188cd}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{b48ab06a-d1cd-4dcd-96ce-5ee597e81f97}">
+		<property name="isCutoff">
+			<value>true</value>
+		</property>
+		<property name="start">
+			<value>0.95000000000000007</value>
+		</property>
+		<property name="length">
+			<value>0.050000000000000003</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{4e62cdd1-e9d4-4155-a41c-8717989f28f1}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{99d44b36-127d-45f1-961c-8d5b029f58ab}">
