@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{ab29cb8f-5fe4-4cce-a6af-a38cb5034586}">
+		<property name="note">
+			<value>Boss musik med en parameter som ökar dB på track 2 och 3 när bossen har tagit tillräckligt med skada. När Bossen blir besegrad så spelas det en Victory mellodi som noterar spelaren att fighten är över.</value>
+		</property>
 		<property name="name">
 			<value>MusicBossTemp</value>
 		</property>

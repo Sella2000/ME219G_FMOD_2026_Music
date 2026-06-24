@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{d642ef27-bbed-4848-a04c-dc78b3682efa}">
+		<property name="note">
+			<value>Musik för när spelaren är i grottan i zone 4. Musiken har en combat parameter som byter till combat musiken när fienderna hittar spelaren. Det finns även en AHDSR för att musiken ska lugnt flytta in och ut när du kommer in i zonen eller lämnar zonen.</value>
+		</property>
 		<property name="name">
 			<value>Zone 4 Music</value>
 		</property>
@@ -28,7 +31,6 @@
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{25be89b4-5960-4ad0-b0cd-ac1e326ed83b}</destination>
-			<destination>{634200e9-2ec9-4cc3-a999-c3f2ac51d28e}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{40871c53-204d-44e3-80b2-4d6debea8f7f}</destination>
@@ -73,11 +75,6 @@
 			<destination>{ac2a81b5-6ec4-4165-9533-7cf4dcdfa3d8}</destination>
 		</relationship>
 	</object>
-	<object class="GroupTrack" id="{634200e9-2ec9-4cc3-a999-c3f2ac51d28e}">
-		<relationship name="mixerGroup">
-			<destination>{8a251b7b-bd61-4c56-9b42-c84ced30532f}</destination>
-		</relationship>
-	</object>
 	<object class="Timeline" id="{40871c53-204d-44e3-80b2-4d6debea8f7f}">
 		<relationship name="modules">
 			<destination>{853b5a56-688f-482c-b650-64db693e4b69}</destination>
@@ -96,6 +93,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{ae02ad72-076c-4e86-be88-7fa091811a5a}">
+		<relationship name="modulators">
+			<destination>{3079db41-5327-44ca-8002-2bff22bbd6cb}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{0aed35d8-89dc-414d-b418-26d543c87362}</destination>
 		</relationship>
@@ -132,6 +132,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{ac2a81b5-6ec4-4165-9533-7cf4dcdfa3d8}">
+		<property name="volume">
+			<value>5</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -140,20 +143,6 @@
 		</relationship>
 		<relationship name="panner">
 			<destination>{7f8fdd7e-6033-44a1-83d4-74caa59e3b62}</destination>
-		</relationship>
-		<relationship name="output">
-			<destination>{ae02ad72-076c-4e86-be88-7fa091811a5a}</destination>
-		</relationship>
-	</object>
-	<object class="EventMixerGroup" id="{8a251b7b-bd61-4c56-9b42-c84ced30532f}">
-		<property name="name">
-			<value>Audio 2</value>
-		</property>
-		<relationship name="effectChain">
-			<destination>{7c326da2-6371-4c11-85ea-a3afdd45ea37}</destination>
-		</relationship>
-		<relationship name="panner">
-			<destination>{8160bb3f-b198-4637-8b82-7965b56fdd03}</destination>
 		</relationship>
 		<relationship name="output">
 			<destination>{ae02ad72-076c-4e86-be88-7fa091811a5a}</destination>
@@ -227,6 +216,26 @@
 			<destination>{504fe3b2-72c0-4988-a30a-3a3c7fed9925}</destination>
 		</relationship>
 	</object>
+	<object class="ADSRModulator" id="{3079db41-5327-44ca-8002-2bff22bbd6cb}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>2000</value>
+		</property>
+		<property name="attackShape">
+			<value>-0.162485585</value>
+		</property>
+		<property name="releaseTime">
+			<value>2000</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{0aed35d8-89dc-414d-b418-26d543c87362}">
 		<relationship name="effects">
 			<destination>{e12c2630-a77c-44e1-aa4d-7bbc2dabbacd}</destination>
@@ -240,12 +249,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7f8fdd7e-6033-44a1-83d4-74caa59e3b62}" />
-	<object class="MixerBusEffectChain" id="{7c326da2-6371-4c11-85ea-a3afdd45ea37}">
-		<relationship name="effects">
-			<destination>{483f3dbd-2264-4adf-b3c2-757208bf9eda}</destination>
-		</relationship>
-	</object>
-	<object class="MixerBusPanner" id="{8160bb3f-b198-4637-8b82-7965b56fdd03}" />
 	<object class="ParameterCondition" id="{6aa78436-7237-4557-9f81-db250b8a1374}">
 		<property name="minimum">
 			<value>0</value>
@@ -270,5 +273,4 @@
 	</object>
 	<object class="MixerBusFader" id="{e12c2630-a77c-44e1-aa4d-7bbc2dabbacd}" />
 	<object class="MixerBusFader" id="{0e45ac80-0cfa-48f6-baef-d55672ee6a0f}" />
-	<object class="MixerBusFader" id="{483f3dbd-2264-4adf-b3c2-757208bf9eda}" />
 </objects>

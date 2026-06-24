@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{f1586ae9-fa92-44e6-9722-32500ee03b36}">
+		<property name="note">
+			<value>Cave Reverb</value>
+		</property>
 		<property name="name">
 			<value>CaveReverb</value>
 		</property>

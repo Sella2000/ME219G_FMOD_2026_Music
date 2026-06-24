@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{9c785f25-0a15-43c9-90ec-8a262be40650}">
+		<property name="note">
+			<value>Musik för att spelaren förlorade och en Overriding mixer för att stänga ute musiken</value>
+		</property>
 		<property name="name">
 			<value>StingerPlayerLost</value>
 		</property>

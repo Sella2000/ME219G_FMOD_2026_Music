@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{1443d010-6630-425b-b1d3-b16e279bf4bd}">
+		<property name="note">
+			<value>Stinger när spelaren plockar upp nycklar och andra föremål.</value>
+		</property>
 		<property name="name">
 			<value>PickUpItemStinger</value>
 		</property>

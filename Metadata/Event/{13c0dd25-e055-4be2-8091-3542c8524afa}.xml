@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{13c0dd25-e055-4be2-8091-3542c8524afa}">
+		<property name="note" />
 		<property name="name">
 			<value>TemporarySpaceshipMusic</value>
 		</property>
